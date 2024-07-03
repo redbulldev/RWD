@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div class="hoc_web">Học Web Chuẩn</div>
+
+	<br>
+	<!-- <div class="rwd_image">
+		<img src="https://2sao.vietnamnetjsc.vn/images/2024/06/16/15/58/kylie-2.jpg">
+	</div> -->
+
+	<!-- <picture>
+	    <source media="(min-width: 1025px)" srcset="https://img_cms.thscore.fun/files/goaloo/getpic/d673c0e4b1f6442d8eb279b05703a439.jpg">
+	    <source media="(min-width: 641px)" srcset="https://img_cms.thscore.fun/files/goaloo/getpic/e99e66f986d94905b6722d845fdfcb77.jpeg">
+	    <img src="img_green.jpg" alt="">
+	</picture> -->
+
+	<!-- <div>
+		<img src="https://img_cms.thscore.fun/files/goaloo/getpic/d673c0e4b1f6442d8eb279b05703a439.jpg" alt="" class="pc">
+		<img src="https://img_cms.thscore.fun/files/goaloo/getpic/e99e66f986d94905b6722d845fdfcb77.jpeg" alt="" class="tablet">
+		<img src="https://2sao.vietnamnetjsc.vn/images/2024/06/16/15/58/kylie-2.jpg" class="sp">
+	</div> -->
+
+
+<div class='paragraph'>
+    <p class="image"><img src="https://img_cms.thscore.fun/files/goaloo/getpic/d673c0e4b1f6442d8eb279b05703a439.jpg" alt=""></p>
+    <p class="text">Cras vitae orci mattis, venenatis nisl in, ullamcorper orci. Aliquam ultricies, nunc eu tincidunt tempus, lectus quam fermentum orci, nec congue nunc metus molestie velit. Pellentesque vel vulputate dui. Donec et congue magna. Maecenas dignissim ut libero vel euismod. Maecenas et vestibulum nisi, in rutrum ligula. Vivamus a varius enim.</p>
+</div>
+
+
+
+
+</body>
+</html>
+
+<style type="text/css">
+.hoc_web{
+	background-color: #92dfc8;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	width: 200px;
+}
+
+/*.rwd_image img {
+	width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+	.hoc_web{
+		background-color: red;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.hoc_web{
+		background-color:  black;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.hoc_web{
+		background-color:  yellow;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.hoc_web{
+		background-color:  blue;
+	}
+}
+*/
+
+/*==========================*/
+/* Hiển thị cho PC, nên tablet và SP sẽ ẩn */
+/*@media screen and (min-width: 1025px) {
+	.tablet, .sp {
+		display: none;
+	}
+}*/
+
+
+/* Hiển thị cho tablet, nên PC và SP sẽ ẩn */
+/*@media screen and (max-width: 1024px) and (min-width: 641px) {
+	.sp {
+		display: none;
+	}
+}
+*/
+/* Hiển thị cho SP, nên tablet và PC sẽ ẩn */
+/*@media screen and(max-width:640px) {
+	.tablet, .pc {
+		display: none;
+	}
+}*/
+
+
+
+.paragraph {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    border: #ccc solid 1px;
+}
+/* Đây là thủ thuật clearfix, ai chưa biết thì xem lại bài học CSS he */
+   paragraph:after {
+        clear: both;
+        content: "abc";
+        display: block;
+        height: 0;
+        line-height: 0;
+        visibility: hidden;
+    }
+
+    .image {
+       float: left;
+       width:200px;
+       margin-right:20px ;
+    }
+
+    .image img {
+    	max-width:100%;
+       /* Dành cho hình có width lớn hơn thành phần bao ngoài */
+    }
+
+    .text {
+        float:left;
+        width: 380px;
+    }
+</style>
